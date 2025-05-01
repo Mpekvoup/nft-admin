@@ -22,7 +22,7 @@ function CreateProduct() {
       category,
     };
     try {
-      const res = await a.post("/products", product);
+      const res = await a.post("/nfts", product);
       alert("Товар успешно создан!");
       setName("");
       setPrice(0);
@@ -42,18 +42,18 @@ function CreateProduct() {
         <h1 className="title">Создать товар</h1>
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-control">
-            <label for="name">Название товара</label>
+            <label htmlFor="name">Название товара</label>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
               id="name"
               type="text"
-              placeholder="Введите товара"
+              placeholder="Введите название товара"
               required
             />
           </div>
           <div className="form-control">
-            <label for="price">Цена</label>
+            <label htmlFor="price">Цена</label>
             <input
               value={price}
               onChange={(e) => setPrice(e.target.value)}
@@ -64,7 +64,7 @@ function CreateProduct() {
             />
           </div>
           <div className="form-control">
-            <label for="description">Описание</label>
+            <label htmlFor="description">Описание</label>
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
@@ -74,7 +74,7 @@ function CreateProduct() {
             ></textarea>
           </div>
           <div className="form-control">
-            <label for="image">Фото</label>
+            <label htmlFor="image">Фото</label>
             <input
               value={image}
               onChange={(e) => setImage(e.target.value)}
@@ -85,7 +85,7 @@ function CreateProduct() {
             />
           </div>
           <div className="form-control">
-            <label for="category">Категория</label>
+            <label htmlFor="category">Категория</label>
             <input
               value={category}
               onChange={(e) => setCategory(e.target.value)}
