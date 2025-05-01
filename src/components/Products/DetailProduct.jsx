@@ -26,9 +26,9 @@ function DetailProduct () {
                     <img src={product.image} alt="" className="product-img" />
                     <div className="product-detail__content">
                         <h2 className="product-detail__title">{product.name}</h2>
-                        <p>Цена: {product.price} &#8376;</p>
-                        <p>Описание: {product.description}</p>
-                        <p>Категория: <span className="category-badge">{product.category}</span></p>
+                        <p className="helptxt">Цена: {product.price} &#8376;</p>
+                        <p className="helptxt">Описание: {product.description}</p>
+                        <p className="helptxt">Категория: <span className="category-badge">{product.category}</span></p>
                     </div>
                 </div>
             </div>

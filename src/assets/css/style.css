@@ -307,3 +307,6 @@ a:hover {
     color: var(--primary);
     text-shadow: 0 0 8px var(--primary), 0 0 16px var(--secondary);
 }
+.helptxt {
+    font-size: 14px;
+}
